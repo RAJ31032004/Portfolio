@@ -28,6 +28,10 @@ header p {
     color: #94a3b8;
 }
 
+.top-buttons {
+    margin-top: 20px;
+}
+
 section {
     padding: 40px;
 }
@@ -61,6 +65,24 @@ h2 {
     transform: scale(1.05);
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
 .contact a {
     color: #38bdf8;
     text-decoration: none;
@@ -78,16 +100,20 @@ footer {
 
 <header>
     <h1>Raj Jadhav</h1>
-    <p>AI & Data Science Student | Software Developer | System Programmer | Backend Developer </p>
+    <p>AI & Data Science Student | Software Developer | Backend Developer</p>
+
+    <div class="top-buttons">
+        <a href="Raj_Jadhav_Resume.pdf" class="btn" download>📄 Download Resume</a>
+        <a href="mailto:rajsjadhav2004@gmail.com" class="btn">💼 Hire Me</a>
+    </div>
 </header>
 
 <section>
     <h2>👨‍💻 About Me</h2>
     <p>
-        Aspiring Software Developer with hands-on experience in system programming, backend development, and AI-based
-        applications.Skilled in C, Java, and Python, with strong problem-solving abilities and a deep understanding of
-        operating systems, networking, and data structures.I enjoy building high-performance applications and continuously 
-        learning new technologies.
+        Aspiring Software Developer with hands-on experience in system programming, backend development, and AI-based applications.
+        Skilled in C, Java, and Python, with strong problem-solving abilities and deep understanding of Operating Systems,
+        Networking, and Data Structures.
     </p>
 </section>
 
@@ -112,58 +138,43 @@ footer {
 <section>
     <h2>📂 Projects</h2>
     <div class="projects">
-        
-    <div class="card">
-        <h3>Virtual PC Control System</h3>
-        <p>
-            AI-based touchless PC control using face, hand gesture and voice recognition with OpenCV.
-        </p>
-        <a href="https://github.com/RAJ31032004" target="_blank" class="btn">View Code</a>
-    </div>
 
-    <div class="card">
-        <h3>Concurrent FTP Server</h3>
-        <p>
-            Multi-client FTP server using socket programming and multithreading in C.
-        </p>
-        <a href="https://github.com/RAJ31032004" target="_blank" class="btn">View Code</a>
-    </div>
+        <div class="card">
+            <h3>Virtual PC Control System</h3>
+            <p>AI-based touchless PC control using OpenCV, gesture & voice recognition.</p>
+            <a href="https://github.com/RAJ31032004" target="_blank" class="btn">💻 View Code</a>
+        </div>
 
-    <div class="card">
-        <h3>Custom Virtual File System</h3>
-        <p>
-            Designed file system with encryption and custom shell commands using C.
-        </p>
-        <a href="https://github.com/RAJ31032004" target="_blank" class="btn">View Code</a>
-    </div>
+        <div class="card">
+            <h3>Concurrent FTP Server</h3>
+            <p>Multi-client server using socket programming and multithreading in C.</p>
+            <a href="https://github.com/RAJ31032004" target="_blank" class="btn">💻 View Code</a>
+        </div>
 
-    <div class="card">
-        <h3>File Packer & Unpacker</h3>
-        <p>
-            Java-based secure file archiving tool with encryption and metadata handling.
-        </p>
-        <a href="https://github.com/RAJ31032004" target="_blank" class="btn">View Code</a>
-    </div>
+        <div class="card">
+            <h3>Custom Virtual File System</h3>
+            <p>File system with encryption and custom shell commands using C.</p>
+            <a href="https://github.com/RAJ31032004" target="_blank" class="btn">💻 View Code</a>
+        </div>
 
-    <div class="card">
-        <h3>Process Memory Inspector</h3>
-        <p>
-            Analyzed Linux process memory layout including stack, heap, and data segments.
-        </p>
-        <a href="https://github.com/RAJ31032004" target="_blank" class="btn">View Code</a>
-    </div>
+        <div class="card">
+            <h3>File Packer & Unpacker</h3>
+            <p>Java-based secure file archiving system with encryption.</p>
+            <a href="https://github.com/RAJ31032004" target="_blank" class="btn">💻 View Code</a>
+        </div>
 
-</div>
-        
-        
-       
+        <div class="card">
+            <h3>Process Memory Inspector</h3>
+            <p>Analyzed Linux process memory layout (stack, heap, data segments).</p>
+            <a href="https://github.com/RAJ31032004" target="_blank" class="btn">💻 View Code</a>
+        </div>
 
     </div>
 </section>
 
 <section>
     <h2>🎓 Education</h2>
-    <p>B.E (Artificial Intelligence & Data Science) – 2026</p>
+    <p><strong>B.E (Artificial Intelligence & Data Science)</strong> – 2026</p>
     <p>Savitribai Phule Pune University | CGPA: 8.085</p>
 </section>
 
