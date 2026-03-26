@@ -1,10 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Raj Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Jadhav Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: #1e293b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+.skills span {
+    background: #1e293b;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I am Raj Jadhav</p>
+
+<header>
+    <h1>Raj Jadhav</h1>
+    <p>AI & Data Science Student | Software Developer | System Programmer | Backend Developer </p>
+</header>
+
+<section>
+    <h2>👨‍💻 About Me</h2>
+    <p>
+        AI & Data Science graduate with strong knowledge of Data Structures, Operating Systems, 
+        Machine Learning, and System Programming. Passionate about building scalable and efficient 
+        software solutions and working on real-world problem-solving applications.
+    </p>
+</section>
+
+<section>
+    <h2>💻 Technical Skills</h2>
+    <div class="skills">
+        <span>Java</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>MySQL</span>
+        <span>MongoDB</span>
+        <span>REST API</span>
+        <span>Hibernate</span>
+        <span>Linux</span>
+        <span>Git</span>
+        <span>Data Structures</span>
+    </div>
+</section>
+
+<section>
+    <h2>📂 Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Virtual PC Control (AI Project)</h3>
+            <p>
+                Developed touchless PC control using face, hand gestures, and voice recognition 
+                using Python and OpenCV.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Concurrent FTP Server</h3>
+            <p>
+                Built multi-client FTP server using socket programming and multithreading in C.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Custom Virtual File System</h3>
+            <p>
+                Implemented file system with encryption and custom shell commands using C.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>File Packer & Unpacker</h3>
+            <p>
+                Java-based tool for secure file archiving with encryption support.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Process Memory Inspector</h3>
+            <p>
+                Analyzed Linux process memory layout including stack, heap, and data segments.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>🎓 Education</h2>
+    <p>B.E (Artificial Intelligence & Data Science) – 2026</p>
+    <p>Savitribai Phule Pune University | CGPA: 8.085</p>
+</section>
+
+<section>
+    <h2>📫 Contact</h2>
+    <div class="contact">
+        <p>Email: rajsjadhav2004@gmail.com</p>
+        <p>Phone: +91 8485881787</p>
+        <p>GitHub: <a href="https://github.com/RAJ31032004" target="_blank">RAJ31032004</a></p>
+        <p>LinkedIn: <a href="#">Add your LinkedIn link</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Raj Jadhav | Portfolio</p>
+</footer>
+
 </body>
 </html>
