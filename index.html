@@ -8,71 +8,34 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
 }
 
+/* HEADER */
 header {
     text-align: center;
-    padding: 50px;
-    background: #1e293b;
+    padding: 80px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 42px;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 header p {
     color: #94a3b8;
-}
-
-.top-buttons {
-    margin-top: 20px;
-}
-
-section {
-    padding: 40px;
-}
-
-h2 {
-    color: #38bdf8;
-}
-
-.skills span {
-    background: #1e293b;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
-    border-radius: 6px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
+    font-size: 18px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 12px;
-    padding: 10px 18px;
+    margin-top: 20px;
+    padding: 12px 22px;
     background: #38bdf8;
     color: black;
-    border-radius: 6px;
-    font-size: 14px;
+    border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
@@ -80,18 +43,65 @@ h2 {
 
 .btn:hover {
     background: #0ea5e9;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
+/* SECTIONS */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills span {
+    background: rgba(255,255,255,0.08);
+    padding: 10px 14px;
+    margin: 6px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+}
+
+/* CONTACT */
 .contact a {
     color: #38bdf8;
     text-decoration: none;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e293b;
+    background: #020617;
 }
 </style>
 </head>
@@ -99,20 +109,17 @@ footer {
 <body>
 
 <header>
-    <h1>Raj Jadhav</h1>
-    <p>Software Developer | AI & Data Science Engineer | Backend Developer</p>
+    <h1>Hi, I'm Raj Jadhav 👋</h1>
+    <p>Software Developer | AI Engineer | Backend Developer</p>
 
-    <div class="top-buttons">
-        <a href="https://drive.google.com/drive/folders/1GV8oIhRC_VGkmFcZ8rZFwvb5rz6rLbYt" class="btn" download>📄 Download Resume</a>
-    </div>
+    <a href="https://drive.google.com/drive/folders/1GV8oIhRC_VGkmFcZ8rZFwvb5rz6rLbYt" class="btn">📄 Download Resume</a>
 </header>
 
 <section>
     <h2>👨‍💻 About Me</h2>
     <p>
-        Aspiring Software Developer with hands-on experience in system programming, backend development, and AI-based applications.
-        Skilled in C, Java, and Python, with strong problem-solving abilities and deep understanding of Operating Systems,
-        Networking, and Data Structures.
+        Passionate Software Developer with strong expertise in system programming, backend development, and AI-based applications.
+        Skilled in Java, C, and Python with solid understanding of Operating Systems, Networking, and Data Structures.
     </p>
 </section>
 
@@ -130,7 +137,7 @@ footer {
         <span>Hibernate</span>
         <span>Linux</span>
         <span>Git</span>
-        <span>Data Structures</span>
+        <span>DSA</span>
     </div>
 </section>
 
@@ -139,33 +146,21 @@ footer {
     <div class="projects">
 
         <div class="card">
-            <h3>Virtual PC Control System</h3>
-            <p>AI-based touchless PC control using OpenCV, gesture & voice recognition.</p>
-            <a href="https://github.com/RAJ31032004/Virtual-Control-of-PC-using-Facial-and-Voice-Navigation" target="_blank" class="btn">💻 View Code</a>
+            <h3>Virtual PC Control</h3>
+            <p>AI-based system using OpenCV, gesture & voice recognition.</p>
+            <a href="https://github.com/RAJ31032004/Virtual-Control-of-PC-using-Facial-and-Voice-Navigation" target="_blank" class="btn">View Code</a>
         </div>
 
         <div class="card">
             <h3>Concurrent FTP Server</h3>
-            <p>Multi-client server using socket programming and multithreading in C.</p>
-            <a href="https://github.com/RAJ31032004/Concurrent-FTP-Server" target="_blank" class="btn">💻 View Code</a>
+            <p>Multi-client server using sockets and multithreading.</p>
+            <a href="https://github.com/RAJ31032004/Concurrent-FTP-Server" target="_blank" class="btn">View Code</a>
         </div>
 
         <div class="card">
-            <h3>Custom Virtual File System</h3>
-            <p>File system with encryption and custom shell commands using C.</p>
-            <a href="https://github.com/RAJ31032004/Customized-Virtual-File-System-CVFS-" target="_blank" class="btn">💻 View Code</a>
-        </div>
-
-        <div class="card">
-            <h3>File Packer & Unpacker</h3>
-            <p>Java-based secure file archiving system with encryption.</p>
-            <a href="https://github.com/RAJ31032004/Packer-Unpacker-with-Encryption" target="_blank" class="btn">💻 View Code</a>
-        </div>
-
-        <div class="card">
-            <h3>Process Memory Inspector</h3>
-            <p>Analyzed Linux process memory layout (stack, heap, data segments).</p>
-            <a href="https://github.com/RAJ31032004/Process_Inspector/tree/main" target="_blank" class="btn">💻 View Code</a>
+            <h3>Virtual File System</h3>
+            <p>Custom file system with encryption using C.</p>
+            <a href="https://github.com/RAJ31032004/Customized-Virtual-File-System-CVFS-" target="_blank" class="btn">View Code</a>
         </div>
 
     </div>
@@ -173,28 +168,20 @@ footer {
 
 <section>
     <h2>🎓 Education</h2>
-    <p><strong>B.E (Artificial Intelligence & Data Science)</strong> – 2026</p>
-    <p>Savitribai Phule Pune University | CGPA: 8.085</p>
-    <p><strong>H.S.C</strong> – 2022</p>
-    <p>st.Xavier's School,Mahad | percentage: 83.67%</p>
-    <p><strong>S.S.C</strong> – 2020</p>
-    <p>st.Xavier's Junior College, Mahad | Percentage: 76%</p>
-    
+    <p><strong>B.E AI & Data Science</strong> – 2026</p>
+    <p>Savitribai Phule Pune University | CGPA: 8.08</p>
 </section>
 
 <section>
     <h2>📫 Contact</h2>
-    <div class="contact">
-        <p>Email: rajsjadhav2004@gmail.com</p>
-        <p>Phone: +91 8485881787</p>
-        <p>GitHub: <a href="https://github.com/RAJ31032004" target="_blank">RAJ31032004</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/raj-jadhav-1b43b3276/" target="_blank">Profile</a></p>
-        
-    </div>
+    <p>Email: rajsjadhav2004@gmail.com</p>
+    <p>Phone: +91 8485881787</p>
+    <p>GitHub: <a href="https://github.com/RAJ31032004" target="_blank">RAJ31032004</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/raj-jadhav" target="_blank">Profile</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Raj Jadhav | Portfolio</p>
+    <p>© 2026 Raj Jadhav</p>
 </footer>
 
 </body>
